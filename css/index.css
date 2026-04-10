@@ -221,13 +221,12 @@ p{
 
 
 /* 팝업 */
-.popup{
+.popup {
     margin-top: 6rem;
     padding-top: 6rem;
-    margin-top: 6rem;
-    background: 
-    url(../img/pattenrn-check.png) repeat 0 0,
-    url(../img/bg-box.jpg) no-repeat 0 calc(100% - 64px) / 100% 561px;
+    padding-bottom: 6rem;
+    background: url(../img/pattern-check.png) repeat 0 0,
+    url(../img/bg-box.jpg) no-repeat 0 calc(100% - 191px) / 100% 540px;
 }
 .popup h2{
     font-size: 5rem;
@@ -268,28 +267,29 @@ p{
 .popup-img-slider .swiper-wrapper{
     transition-timing-function: linear;
 }
-/* .popup-img-slider .swiper-slide.swiper-slide-active{
-    border: 1px solid #fff;
-} */
 .popup-txt-slider .swiper-slide{
     background-color: #205A98;
 }
+.popup-img-slider img{
+    width:100%;
+    object-fit: cover;
+}
 
-/* 포스터 */
-.poster{
+.poster {
     padding-top: 6rem;
     border-top: 1px solid #205A98;
 }
 .poster .common-frame{
     display: flex;
-    gap: 172px;
+    gap:172px;
     align-items: flex-start;
 }
 .poster-title{
-    width: 734px;
+    width:734px;
     position: sticky;
-    top: 6rem;
-    left: 0;
+    top:6rem;
+    left:0;
+    
 }
 .poster-title h2{
     font-size: 5rem;
@@ -298,40 +298,39 @@ p{
     color: #205A98;
 }
 .poster-title h2+p{
-    font-size: 3rem;
+    font-size:3rem;
     margin-bottom: 3rem;
 }
+
 .poster-list{
-    flex: 1;
+    flex:1;
     display: flex;
-    flex-direction: column;
-    gap: 6rem;
+    flex-direction: column;    
+    gap:6rem;
 }
 .poster-list>li{
     display: flex;
-    gap: 107px;
+    gap:107px;
 }
 .poster-list>li:nth-of-type(2n){
     flex-direction: row-reverse;
 }
 .poster-list>li figure{
-    width: 500px;
+    width:500px;
     flex-shrink: 0;
 }
 .poster-txt{
-    flex: 1;
-    padding-top: 3rem;
+    flex:1;
+    padding-top: 5rem;
 }
 .poster-txt h3{
     font-weight: 700;
-    margin-bottom: 1rem;
+    margin-bottom: 4rem;
 }
 .poster-txt p{
     margin-top: 1rem;
 }
 
-
-/* 배너 */
 .banner{
     padding:6rem 0;
     background-color: #205A98;
@@ -352,8 +351,152 @@ p{
     margin-bottom: 3rem;
 }
 
+.detail{
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+}
+.detail h2{
+    font-size:5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: #205A98;
+}
+.detail h2+p{
+    font-size:3rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+.detail h2+p+p{
+    margin-bottom: 3rem;
+    text-align: center;
+}
+.detail-swiper figure{
+    position: relative;
+    margin-bottom: 2rem;
+}
+.detail-swiper figure:hover img{
+    filter: brightness(0.4);
+}
+.detail-swiper figure:after{
+    color:#fff;
+    font-size:1.5rem;
+    font-weight: 700;
+    content:"click!";
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+    display: none;
+}
+.detail-swiper figure:hover:after{
+    display: block;
+}
+.detail-swiper figure:hover{
+    cursor: pointer;
+}
+.detail-swiper h4{
+    margin-bottom: 0.5rem;
+}
+
+.btn-close{
+    background-color: #fff;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:2.5rem;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.203);
+    position: sticky;
+    top:1rem;
+    left:50%;
+    transform: translateX(-50%);
+}
+.btn-close img{
+    height:1.2rem;
+}
+
+.btn-top{
+    cursor: pointer;
+    background-color: #fff;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:2.5rem;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.203);
+    position: sticky;
+    top:calc(100vh - 3.5rem);
+    left:50%;
+    transform: translateX(-50%);
+    margin-bottom: 3rem;
+}
+.btn-top img{
+    height:1.2rem;
+}
 
 
+.detail-title {
+    text-transform: uppercase;
+    font-weight: 900;
+    text-align: center;
+    font-size: calc(100vw/10);
+    margin-top: 4rem;
+    position: sticky;
+    top:38vh;
+    z-index: -1;
+}
+.detail-content{
+    text-align: center;
+    padding-bottom: 6rem;
+}
+.detail-content h3{
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+    font-size:2rem;
+}
+.detail-content h2{
+    margin-bottom: 6rem;
+    font-size:3rem;
+    font-weight: 700;
+}
+.po{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 4rem;
+    padding-bottom: 2rem;
+    position: relative;
+}
+.po:after{
+    content:"";
+    position:absolute;
+    width:1rem;
+    height:0.2rem;
+    background-color: #000;
+    left:50%;
+    bottom:0;
+    transform:translateX(-50%);
+}
+.detail-dl{
+    width:890px;
+    margin:0 auto;
+}
+.detail-dl dt{
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+.detail-dl dt span{
+    display: block;
+    margin-bottom: 0.5rem;
+}
+.detail-dl dd{
+    margin-bottom: 3rem;
+    line-height: 140%;
+}
 
 
 
@@ -417,18 +560,19 @@ p{
         width:calc((100% - 1rem)/2);
     }
    .popup {
-        background: url(../img/pattenrn-check.png) repeat 0 0,
+        background: url(../img/pattern-check.png) repeat 0 0,
         url(../img/bg-box.jpg) no-repeat 0 calc(100%) / 100% 485px;
     }
 }
 
 @media (max-width:1500px){
     .popup {
-        background: url(../img/pattenrn-check.png) repeat 0 0,
+        background: url(../img/pattern-check.png) repeat 0 0,
         url(../img/bg-box.jpg) no-repeat 0 calc(100%) / 100% 438px;
     }
 }
 @media (max-width:1440px){
+    
     .profile1{
         gap:1rem;
     }
@@ -438,8 +582,11 @@ p{
         left:0;
         top:3rem;
     }
+}
+
+@media (max-width:1400px){
     .popup {
-        background: url(../img/pattenrn-check.png) repeat 0 0,
+        background: url(../img/pattern-check.png) repeat 0 0,
         url(../img/bg-box.jpg) no-repeat 0 calc(100%) / 100% 454px;
     }
     .poster-list>li{
@@ -448,17 +595,17 @@ p{
     .poster-list>li:nth-of-type(2n){
         flex-direction: column;
     }
-    .poster-txt{
+    .poster-txt {
         padding-top: 1rem;
     }
-    .poster-txt h3{
+    .poster-txt h3 {
         margin-bottom: 2rem;
     }
 }
 
 @media (max-width:1200px){
     .popup {
-        background: url(../img/pattenrn-check.png) repeat 0 0,
+        background: url(../img/pattern-check.png) repeat 0 0,
         url(../img/bg-box.jpg) no-repeat 0 calc(100%) / 100% 407px;
     }
     .poster-txt{
@@ -476,7 +623,6 @@ p{
 }
 
 
-
 @media (max-width:1024px){
     html{
         font-size: var(--basic-font-tab);
@@ -492,8 +638,15 @@ p{
         flex-direction: column;
     }
     .popup {
-        background: url(../img/pattenrn-check.png) repeat 0 0,
+        background: url(../img/pattern-check.png) repeat 0 0,
         url(../img/bg-box.jpg) no-repeat 0 calc(100%) / 100% 358px;
+    }
+    .detail-dl{
+        width: auto;
+        margin: 0;
+    }
+    .detail-content h2{
+        font-size: 2rem;
     }
 }
 
@@ -529,57 +682,71 @@ p{
         grid-column: 1/3;
     }
     .exp-title h2{
-        font-size: 2.5rem;
+        font-size:2.5rem;
     }
     .popup-contents{
         flex-direction: column-reverse;
     }
     .popup-txt{
-        width: 100%;
-        color: #fff;
+        width:100%;
+        color:#fff;
     }
     .popup-station{
-        width: 100%;
+        width:100%;
     }
-    .popup h2{
-        font-size: 2rem;
-    }
-    .popup h2+p{
-        font-size: 1.3rem;
-    }
-/* 포스터 */
+
     .poster .common-frame{
         flex-direction: column-reverse;
+    }
+
+    .poster .common-frame{
         align-items: stretch;
-    } 
-    .poster-title{
+    }
+    .poster-title {
         position: initial;
         top: initial;
         left: initial;
         text-align: center;
         margin-bottom: 3rem;
     }
-    .poster-list>li figure{
+    .poster-list>li figure {
         text-align: center;
     }
-    .poster-txt{
+    .poster-txt {
         text-align: center;
     }
-    .poster-title h2{
+    .poster-title h2 {
         font-size: 2rem;
     }
-    .poster-title h2+p{
+    .poster-title h2+p {
         font-size: 1.3rem;
     }
-/* 배너 */
+    .popup h2 {
+        font-size: 2rem;
+    }
+    .popup h2+p{
+        font-size: 1.3rem;
+    }
+
     .banner h2{
-        font-size: 2.2rem;
+        font-size:2.2rem;
         font-weight: 700;
         margin-bottom: 1rem;
-        }
+    }
     .banner h2+p{
-        font-size: 1.3rem;
+        font-size:1.3rem;
         margin-bottom: 3rem;
+    }
+    .detail-title {
+        font-size: calc(100vw/6);
+        line-height: 100%;
+    }
+
+    .detail h2{
+        font-size:2rem;
+    }
+    .detail h2+p{
+        font-size:1.3rem;
     }
 }
     

@@ -508,22 +508,22 @@
                             설명
                         </div> -->
                     </div>
-                    <div class="swiper-slider">
+                    <div class="swiper-slide">
                         <img src="./img/banner2.jpg" alt="블랙 프라이데이 시즌 오프 최대 60% 할인 이벤트 홍보 배너">
                     </div>
-                    <div class="swiper-slider">
+                    <div class="swiper-slide">
                         <img src="./img/banner3.jpg" alt="농구 코트 배경의 나이키 덩크 로우 클래식 브랜드 배너">
                     </div>
-                    <div class="swiper-slider">
+                    <div class="swiper-slide">
                         <img src="./img/banner4.jpg" alt="화려한 그래픽과 글자가 겹쳐진 나이키 덩크 로우 홍보 배너">
                     </div>
-                    <div class="swiper-slider">
+                    <div class="swiper-slide">
                         <img src="./img/banner5.jpg" alt="1인 의자 최대 50% 할인 이벤트 배너">
                     </div>
-                    <div class="swiper-slider">
+                    <div class="swiper-slide">
                         <img src="./img/banner6.jpg" alt="메리 크리스마스 스페셜 이벤트 배너">
                     </div>
-                    <div class="swiper-slider">
+                    <div class="swiper-slide">
                         <img src="./img/banner7.jpg" alt="리얼 카다이프로 만든 두바이 쫀득 쿠키 신제품 출시 구매 유도 배너">
                     </div>
                     <div class="swiper-slider">
@@ -543,8 +543,82 @@
         </div>
     </div>
 
-
-
+    <div class="detail" id="detail">
+        <div class="common-frame">
+            <h2>Detail Designs</h2>
+            <p class="pf1">Eye-Catching Visuals</p>
+            <p>AI 어시스턴트와 포토샵, 일러스트레이터를 활용하여 가상의 상품 상세페이지를 기획 및 디자인했습니다.</p>
+            <div class="swiper detail-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="./detail-1.html">
+                            <figure>
+                                <img src="./img/detail-lotion-thumb1.jpg" alt="단백질 디테일페이지 섬네일">
+                            </figure>
+                            <h4>단백질 쉐이크 상세페이지</h4>
+                            <h5 class="fwb">구매 전환과 사용 경험을 고려한 상세페이지</h5>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="./detail-2.html">
+                            <figure>
+                                <img src="./img/detail-lotion-thumb2.jpg" alt="단백질 디테일페이지 섬네일">
+                            </figure>
+                            <h4>세럼 화장품 상세페이지</h4>
+                            <h5 class="fwb">제품 이해와 신뢰 형성을 고려한 상세페이지</h5>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="./detail-3.html">
+                            <figure>
+                                <img src="./img/detail-lotion-thumb3.jpg" alt="단백질 디테일페이지 섬네일">
+                            </figure>
+                            <h4>헤드폰 상세페이지</h4>
+                            <h5 class="fwb">기능과 사용 경험을 중심으로 설계한 상세페이지</h5>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="./detail-4.html">
+                            <figure>
+                                <img src="./img/detail-lotion-thumb4.jpg" alt="단백질 디테일페이지 섬네일">
+                            </figure>
+                            <h4>의자 상세페이지</h4>
+                            <h5 class="fwb">사용감과 기능 정보를 중심으로 설계한 의자 상세페이지</h5>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <script>
+                const detailSwiper = new Swiper(".detail-swiper",{
+                    speed:1000,
+                    slidesPerView: 1.2,
+                    spaceBetween: 14,
+                    // Responsive breakpoints
+                    breakpoints: {
+                        // when window width is >= 320px
+                        320: {
+                        slidesPerView: 1.6,
+                        spaceBetween: 14
+                        },
+                        // when window width is >= 480px
+                        480: {
+                        slidesPerView: 1.6,
+                        spaceBetween: 14
+                        },
+                        // when window width is >= 640px
+                        1200: {
+                        slidesPerView: 2.2,
+                        spaceBetween: 20
+                        },
+                        1400: {
+                        slidesPerView: 3,
+                        spaceBetween: 20
+                        },
+                    }
+                })
+            </script>
+        </div>    
+    </div>
 
 </body>
 </html>
