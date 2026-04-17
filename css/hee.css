@@ -512,7 +512,6 @@ nav a {
 .detail-swiper h4{
     margin-bottom: 0.5rem;
 }
-
 .btn-close{
     z-index: 10;
     display: flex;
@@ -525,6 +524,8 @@ nav a {
     top:1rem;
     left:50%;
     transform: translateX(-50%);
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.203);
 }
 .btn-close img{
     height:1.2rem;
@@ -1049,6 +1050,12 @@ nav a {
         font-size: 14px;
         font-weight: var(--fw-bold); 
     }
+    .menu-smart-hidden {
+        top: 5rem;
+        left: 1rem;
+        right: 1rem;
+        bottom: 1rem;
+    }
 
     /* about */
     .about-section{
@@ -1257,18 +1264,10 @@ nav a {
     .project h2 + p{
         font-size: 1.5rem;
     }
-
-    .menu-smart-hidden {
-        top: 5rem;
-        left: 1rem;
-        right: 1rem;
-        bottom: 1rem;
+    .responsive-icon {
+        width: 100%;
+        flex-direction: row;
     }
-
-.responsive-icon {
-    width: 100%;
-    flex-direction: row;
-}
     /* 이미지 교체 */
     .pc{display: none;}
     .mo{display: block;}
