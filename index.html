@@ -34,17 +34,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Birthstone&display=swap" rel="stylesheet">
 
+    <script src="./js/observer.js"></script>
     
 </head>
 <body>
 <!-- 헤더 섹션 -->
 <div class="menu-smart-hidden">
-    <div class="menu-top">
-        <div class="common-frame">
-            <div class="logo">Heejung Choi</div>
-            <span class="btn-close"><img src="./img/btn-close.svg" alt="닫기"></span>
-        </div>
-    </div>
     <div class="menu-content">
         <ul class="gnb-smart">
             <li><a href="#about">About me</a></li>
@@ -88,6 +83,11 @@
     <video autoplay muted loop playsinline class="bg-video">
         <source src="./img/영상 포폴.mp4" type="video/mp4">
     </video>
+    <div class="floating-txt">
+        <h1>Hello</h1>
+        <h1>I am Heejung Choi</h1>
+        <h1>UI.UX & Web Designer</h1>
+    </div>
 </section>
 
 <main>
@@ -149,11 +149,11 @@
         <div class="common-frame">
             <div class="skills-frame">
                 <div class="exp-title">
-                    <h2>Skills</h2>
-                    <p>UX 기획부터 UI 디자인, 퍼블리싱까지 전 과정을 기반으로 일관된 사용자 경험을 구현할 수 있습니다. 각 단계의 흐름을 이해하고, 목적에 맞는 결과물로 연결할 수 있습니다.</p>
+                    <h2 class="reveal">Skills</h2>
+                    <p class="reveal">UX 기획부터 UI 디자인, 퍼블리싱까지 전 과정을 기반으로 일관된 사용자 경험을 구현할 수 있습니다. 각 단계의 흐름을 이해하고, 목적에 맞는 결과물로 연결할 수 있습니다.</p>
                 </div>
                 <ul class="skill-grid">
-                    <li>
+                    <li class="reveal">
                         <div class="icon-title">
                             <figure class="icon">
                                 <img src="./img/icon-figma.svg" alt="Figma icon">
@@ -163,7 +163,7 @@
                         <p>사용자 경험을 기반으로 UI 설계와 와이어프레임, 프로토타입 제작을 수행하고 컴포넌트를 활용해 협업 효율을 높일 수 있습니다.</p>
                     </li>
 
-                    <li>
+                    <li class="reveal">
                         <div class="icon-title">
                             <figure class="icon">
                                 <img src="./img/icon_photoshop.svg" alt="Photoshop icon">
@@ -569,7 +569,7 @@
             <p>사용자의 흐름과 맥락을 깊이 있게 분석하여 자연스러운 여정을 설계합니다.<br>작은 디테일의 차이가 사용성을 좌우한다는 믿음으로 매 순간 더 나은 경험을 설계합니다.</p>
             <h3>Here</h3>
             <ul class="contact-menu">
-                <li><a href="#">Design Resume</a></li>
+                <li><a href="./img/HeejungChoi_resume.pdf" target="_blank">Design Resume</a></li>
                 <li><a href="tel:01049407544">010-4940-7544</a></li>
                 <li><a href="mailto:hee.j0945@gmail.com">hee.j0945@gmail.com</a></li>
             </ul>

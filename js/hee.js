@@ -4,7 +4,7 @@ const allMenu = document.querySelector(".menu-smart-hidden") || document.querySe
 const btnImg = document.querySelector(".btn-menu img") || document.querySelector(".btn-img");
 let statusMenu = false;
 
-const btnClose = document.querySelector('.btn-close');
+const btnClose = document.querySelector('.btn-close-menu');
 
 function closeMobileMenu() {
     allMenu.classList.remove('on');
@@ -75,18 +75,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 header.classList.remove('white-mode');
             }
         }
-
-        // 나타나기 애니메이션
-        const reveals = document.querySelectorAll(".reveal");
-        reveals.forEach(elem => {
-            const windowHeight = window.innerHeight;
-            const elementTop = elem.getBoundingClientRect().top;
-            const elementVisible = 100;
-
-            if (elementTop < windowHeight - elementVisible) {
-                elem.classList.add("active");
-            }
-        });
     }
     // 스크롤 이벤트 연결
     window.addEventListener('scroll', handleScroll);
@@ -181,13 +169,17 @@ function update() {
   });
 
   // 텍스트 실시간 삽입
-  txtBox.querySelector('h3').innerText = data.title;
-  const pTags = txtBox.querySelectorAll('p');
-  pTags[0].innerText = data.p1;
-  pTags[1].innerText = data.p2;
+  if(txtBox){
+        txtBox.querySelector('h3').innerText = data.title;
+        const pTags = txtBox.querySelectorAll('p');
+        pTags[0].innerText = data.p1;
+        pTags[1].innerText = data.p2;
+  }
 
   // 배경색 부드럽게 전환
-  section.style.backgroundColor = data.color;
+  if(section){
+      section.style.backgroundColor = data.color;
+  }
 }
 
 function nextSlide() {
@@ -196,8 +188,10 @@ function nextSlide() {
 }
 
 // 클릭 전환 + 3초 자동 전환
-section.addEventListener('click', nextSlide);
-setInterval(nextSlide, 5000);
+if(section){
+    section.addEventListener('click', nextSlide);
+    setInterval(nextSlide, 5000);
+}
 
 // 페이지 로드 시 첫 실행
 update();
