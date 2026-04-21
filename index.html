@@ -33,6 +33,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Birthstone&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 
     <script src="./js/observer.js"></script>
     
@@ -54,6 +55,40 @@
     </div>
 </div>
 
+
+<section class="hero">
+    <div class="deco floating1 deco1"><img src="./img/flower-pink.png" alt="히어로 장식"></div>
+    <div class="deco floating1 deco2"><img src="./img/flower-yellow.png" alt="히어로 장식"></div>
+    <div class="deco floating1 deco3"><img src="./img/flower-yellow.png" alt="히어로 장식"></div>
+    <div class="deco floating1 deco4"><img src="./img/flower-pink.png" alt="히어로 장식"></div>
+    <div class="deco floating2 deco5"><img src="./img/flower-yellow.png" alt="히어로 장식"></div>
+    <div class="deco floating2 deco6"><img src="./img/flower-pink.png" alt="히어로 장식"></div>
+    <div class="common-frame">
+        <div class="deco-hero">
+            <span>porfolio 2026</span>
+            <span>ui-ux designer</span>
+        </div>
+        <div class="hero-title">
+            <span class="hero-title-deco1 hero-title-deco">사용자의 경험을 디자인하는</span>
+            <h1 class="pfn">ins<img src="./img/flower.svg" alt="i">ght</h1>
+            <span class="hero-title-deco2 hero-title-deco">ui.ux 디자이너 최희정입니다</span>
+        </div>
+        <div class="deco-hero">
+            <span>creative</span>
+            <span>web-app design</span>
+        </div>
+    </div>
+</section>
+
+<main>
+
+    <div class="header-smart">
+        <div class="common-frame">
+            <div class="logo">Heejung Choi</div>
+            <span class="btn-menu"><img src="./img/btn-menu.svg" alt="메뉴"></span>
+        </div>
+    </div>
+
     <header class="pc-header">
         <div class="common-frame">
             <div class="logo">Heejung Choi</div>
@@ -70,30 +105,14 @@
         </div>
     </header>
 
-    <div class="header-smart">
-        <div class="common-frame">
-            <div class="logo">Heejung Choi</div>
-            <span class="btn-menu"><img src="./img/btn-menu.svg" alt="메뉴"></span>
-        </div>
-    </div>
 
-
-<!-- 비디오 -->
-<section class="video">
-    <video autoplay muted loop playsinline class="bg-video">
-        <source src="./img/영상 포폴.mp4" type="video/mp4">
-    </video>
-    <div class="floating-txt">
-        <h1>Hello</h1>
-        <h1>I am Heejung Choi</h1>
-        <h1>UI.UX & Web Designer</h1>
-    </div>
-</section>
-
-<main>
     <section class="about-section" id="about">
         <div class="common-frame">
-        <h2 class="about-title reveal">about</h2>
+        <h2 class="about-title reveal">
+            <!-- <img class="fdeco1 floating1" src="./img/flower-pink.png" alt="데코1">
+            <img class="fdeco2 floating2" src="./img/flower-yellow.png" alt="데코2"> -->
+            About
+        </h2>
 
             <div class="profile">
             <div class="profile-left">
@@ -111,7 +130,8 @@
 
             <div class="profile-right">
                 <div class="about-frame">
-                    <h2 class="design reveal">How I Design</h2>
+                    <h2 class="design reveal pfn">Insight to Detail</h2>
+                    <!-- <p>관찰에서 시작해 디테일까지 완성하는 디자이너입니다.</p> -->
                     <div class="design-point reveal">
                         <h3>1. Insight : 관찰에서 시작하는 디자인</h3>
                         <p>디자인은 단순히 "예쁘게" 만드는 것보다 "왜"에 집중합니다.<br>
@@ -172,7 +192,7 @@
                         </div>
                         <p>팝업, 배너, 상세페이지, 포스터 등 다양한 콘텐츠 제작과 이미지 보정 및 합성을 통해 완성도 높은 비주얼 디자인을 구현할 수 있습니다.</p>
                     </li>
-                    <li>
+                    <li class="reveal">
                         <div class="icon-title">
                             <figure class="icon">
                                 <img src="./img/icon_illustrator.svg" alt="Illustrator icon">
@@ -181,7 +201,7 @@
                         </div>
                         <p>아이콘, 로고 등 벡터 기반 그래픽 제작을 통해 브랜드 아이덴티티를 일관성 있게 시각적으로 표현할 수 있습니다.</p>
                     </li>
-                    <li>
+                    <li class="reveal">
                         <div class="icon-title">
                             <figure class="icon">
                                 <img src="./img/icon_html.svg" alt="html5 icon">
@@ -190,7 +210,7 @@
                         </div>
                         <p>웹 표준과 접근성을 고려한 시맨틱 마크업으로 검색 엔진에 최적화된 구조를 설계하고 사용자 중심의 정보 구조를 구성할 수 있습니다.</p>
                     </li>
-                    <li>
+                    <li class="reveal">
                         <div class="icon-title">
                             <figure class="icon">
                                 <img src="./img/icon_css3.svg" alt="CSS3 icon">
@@ -199,7 +219,7 @@
                         </div>
                         <p>미디어 쿼리를 활용한 반응형 웹과 다양한 레이아웃을 구현하고 트랜지션 및 애니메이션을 통해 인터랙티브한 사용자 경험을 제공할 수 있습니다.</p>
                     </li>
-                    <li>
+                    <li class="reveal">
                         <div class="icon-title">
                             <figure class="icon">
                                 <img src="./img/icon_javascript.svg" alt="JavaScript icon">
@@ -208,7 +228,7 @@
                         </div>
                         <p>Vanilla JS를 활용해 슬라이더, 모달, 스크롤 애니메이션 등 인터랙션을 구현하고 ES6+ 문법 기반의 가독성 높은 코드를 작성할 수 있습니다.</p>
                     </li>
-                    <li>
+                    <li class="reveal">
                         <div class="icon-title">
                             <figure class="icon">
                                 <img src="./img/icon_git.svg" alt="Git icon">
@@ -217,7 +237,7 @@
                         </div>
                         <p>프로젝트 변경 사항을 버전별로 관리하고 브랜치 생성 및 병합을 통해 기능을 독립적으로 개발할 수 있습니다.</p>
                     </li>
-                    <li>
+                    <li class="reveal">
                         <div class="icon-title">
                             <figure class="icon">
                                 <img src="./img/icon_github.svg" alt="GitHub icon">
@@ -226,7 +246,7 @@
                         </div>
                         <p>로컬 작업물을 원격 저장소에 공유해 협업할 수 있으며, GitHub Pages를 활용해 정적 웹 사이트를 배포하고 프로젝트를 외부에 공개할 수 있습니다.</p>
                     </li>
-                    <li>
+                    <li class="reveal">
                         <div class="icon-title">
                             <figure class="icon">
                                 <img src="./img/icon_notion.svg" alt="Notion icon">
@@ -243,9 +263,9 @@
     <div class="popup" id="sec3">
         <div class="common-frame">
             <div class="popup-header">
-                <h2>Popup Designs</h2>
-                <p class="pf1">Eye-Catching Visuals</p>
-                <p>500×500 px의 제한된 영역 안에서, 짧은 노출에도 핵심 메시지가 빠르게 전달될 수 있도록 시각적 흐름을 설계했습니다.</p>
+                <h2 class="reveal">Popup Designs</h2>
+                <p class="pf1 reveal">Instant Visual Impact</p>
+                <p class="reveal">500×500 px의 제한된 영역 안에서, 짧은 노출에도 핵심 메시지가 빠르게 전달될 수 있도록 시각적 흐름을 설계했습니다.</p>
             </div>
             <div class="swiper popup-slider">
                 <div class="swiper-wrapper">
@@ -318,9 +338,9 @@
                 </ul>
                 <div class="text-group">
                 <div class="poster-title">
-                    <h2>Poster Designs</h2>
-                    <p class="pf1">Eye-Catching Visuals</p>
-                    <p>사용자의 시선을 고려해 핵심 메시지가 효과적으로 전달되도록 설계했으며, 500×700 px 사이즈로 제작했습니다.</p>
+                    <h2 class="reveal">Poster Designs</h2>
+                    <p class="pf1 reveal">Clear Visual Messaging</p>
+                    <p class="reveal">사용자의 시선을 고려해 핵심 메시지가 효과적으로 전달되도록 설계했으며, 500×700 px 사이즈로 제작했습니다.</p>
                 </div>
                 <div class="poster-txt" id="poster-txt">
                     <h3></h3>
@@ -334,9 +354,9 @@
 
     <div class="banner" id="sec5">
             <div class="common-frame">
-                <h2>Banner Designs</h2>
-                <p class="pf1">Eye-Catching Visuals</p>
-                <p>1920×700 px의 넓은 화면 비율을 고려해, 첫 인상에서 핵심 메시지가 명확하게 전달되도록 시각적 흐름을 설계했습니다.</p>
+                <h2 class="reveal">Banner Designs</h2>
+                <p class="pf1 reveal">Strong First Impression</p>
+                <p class="reveal">1920×700 px의 넓은 화면 비율을 고려해, 첫 인상에서 핵심 메시지가 명확하게 전달되도록 시각적 흐름을 설계했습니다.</p>
                 <div class="swiper banner-slider">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
@@ -419,9 +439,9 @@
 
     <div class="detail" id="detail">
         <div class="common-frame">
-            <h2>Detail Designs</h2>
-            <p class="pf1">Eye-Catching Visuals</p>
-            <p>AI 어시스턴트와 포토샵, 일러스트레이터를 활용하여 가상의 상품 상세페이지를 기획 및 디자인했습니다.</p>
+            <h2 class="reveal">Detail Designs</h2>
+            <p class="pf1 reveal">High-Fidelity Visuals</p>
+            <p class="reveal">AI 어시스턴트와 포토샵, 일러스트레이터를 활용하여 가상의 상품 상세페이지를 기획 및 디자인했습니다.</p>
             <div class="swiper detail-swiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
@@ -485,7 +505,7 @@
                         spaceBetween: 20
                         },
                         1400: {
-                        slidesPerView: 3,
+                        slidesPerView: 3.5,
                         spaceBetween: 20
                         },
                     }
@@ -496,9 +516,9 @@
 
     <div class="project" id="sec7">
             <div class="common-frame">
-                <h2>Responsive Web Works</h2>
-                <p class="pf1">Eye-Catching Visuals</p>
-                <p>실제 서비스 환경을 고려한 반응형 웹 프로젝트입니다. <br> 다양한 디바이스에서도 일관된 사용자 경험을 제공하도록 설계했습니다.</p>
+                <h2 class="reveal">Responsive Web Works</h2>
+                <p class="pf1 reveal">Smooth User Experience</p>
+                <p class="reveal">실제 서비스 환경을 고려한 반응형 웹 프로젝트입니다. <br> 다양한 디바이스에서도 일관된 사용자 경험을 제공하도록 설계했습니다.</p>
                 <h3 class="ptitle">Break Point</h3>
                 <ul class="responsive-icon">
                     <li>
@@ -527,33 +547,33 @@
             <div class="project-content">
                 <div class="common-frame">
                     <h3><span>1</span>Project</h3>
-                    <h4>BREAD:ON Responsive Website</h4>
-                    <p class="fwb">미니멀 레이아웃을 통해 콘텐츠 가독성과 탐색 흐름을 고려했습니다.</p>
-                    <p>불필요한 요소를 덜어낸 미니멀한 레이아웃으로 콘텐츠 가독성을 높이고 <br> 사용자가 복잡함 없이 메뉴 탐색에 집중할 수 있도록 설계했습니다.</p>
+                    <h4>Dyson Responsive Redesign</h4>
+                    <p class="fwb">탐색 흐름을 개선한 직관적인 구조로 설계했습니다.</p>
+                    <p>복잡한 네비게이션 구조와 전문 용어 중심의 정보를 재정리하여 사용자가 제품을 쉽고 빠르게 탐색할 수 있도록 흐름을 단순화하고 구매 동선을 개선했습니다.</p>
                 </div>
                 <ul class="project-sticky">
-                    <li><a href="#">Original</a></li>
-                    <li><a href="#">Renewal</a></li>
+                    <li><a href="https://kwono8693-code.github.io/web-dyson/" target="_blank">Renewal</a></li>
+                    <li><a href="https://www.dyson.co.kr/" target="_blank">Original</a></li>
                 </ul>
                 <figure class="project-detail">
-                    <img src="./img/breadon-pc.jpg" alt="브레드온 디테일샷 pc" class="pc">
-                    <img src="./img/moov_tab.jpg" alt="모르바프로젝트 디테일샷 mobile" class="mo">
+                    <img src="./img/moov_pc.jpg" alt="다이슨 디테일샷 pc" class="pc">
+                    <img src="./img/moov_tab.jpg" alt="다이슨 디테일샷 mobile" class="mo">
                 </figure>
             </div>
             <div class="project-content">
                 <div class="common-frame">
                     <h3><span>2</span>Project</h3>
-                    <h4>MORVA Coffee Responsive WebSite</h4>
-                    <p class="fwb">커피의 화려함보다는 '본질(Flavor)'과 '휴식(Moment)'에 집중했습니다.</p>
-                    <p>장식적인 요소를 최소화하고 화이트 스페이스(여백)를 과감하게 활용하여,<br> 사용자가 브랜드의 이미지와 콘텐츠에 온전히 몰입할 수 있는 미니멀리즘 디자인을 채택했습니다.</p>
+                    <h4>Bread:On Responsive WebSite</h4>
+                    <p class="fwb">미니멀 레이아웃을 통해 콘텐츠 가독성과 탐색 흐름을 고려했습니다.</p>
+                    <p>불필요한 요소를 덜어낸 미니멀한 레이아웃으로 콘텐츠 가독성을 높이고 <br> 사용자가 복잡함 없이 메뉴 탐색에 집중할 수 있도록 설계했습니다.</p>
                 </div>
                 <ul class="project-sticky">
-                    <li><a href="#">Original</a></li>
-                    <li><a href="#">Renewal</a></li>
+                    <li><a href="#">New Branding Web</a></li>
+                    <li><a href="#">Figma</a></li>
                 </ul>
                 <figure class="project-detail">
-                    <img src="./img/moov_pc.jpg" alt="모르바프로젝트 디테일샷 pc" class="pc">
-                    <img src="./img/moov_tab.jpg" alt="모르바프로젝트 디테일샷 mobile" class="mo">
+                    <img src="./img/breadon-pc.jpg" alt="브레드온 디테일샷 pc" class="pc">
+                    <img src="./img/breadon-mo.jpg" alt="브레드온 디테일샷 mobile" class="mo">
                 </figure>
             </div>
     
