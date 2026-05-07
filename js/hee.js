@@ -83,6 +83,9 @@ document.addEventListener('DOMContentLoaded', function() {
 })
 // 팝업
 document.addEventListener('DOMContentLoaded', function() {
+    const popupEl = document.querySelector(".popup-slider");
+    if(!popupEl) return;
+
     const popupSlider = new Swiper(".popup-slider", {
         direction: 'horizontal',
         loop: true,
