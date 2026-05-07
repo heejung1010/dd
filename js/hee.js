@@ -211,16 +211,17 @@ document.addEventListener("DOMContentLoaded",()=>{
     }
 
     // 스티커 제목 연해지기
-    const detailTitle = document.querySelector(".detail-title")
-    window.addEventListener("scroll",()=>{
-         if(!detailTitle) return;
-        let windowHeight = window.innerHeight
-        let scrollValue = window.scrollY
-        console.log(scrollValue)
-        let opacity = 1.1 - (scrollValue / windowHeight*3)
-        opacity = Math.max(0.1, Math.min(1, opacity))
-        detailTitle.style.opacity = opacity
-    })
+    const detailTitle = document.querySelector(".detail-title");
+    if (detailTitle) {
+        window.addEventListener("scroll", () => {
+            let windowHeight = window.innerHeight;
+            let scrollValue = window.scrollY;
+            
+            let opacity = 1.1 - (scrollValue / windowHeight * 3);
+            opacity = Math.max(0.1, Math.min(1, opacity));
+            detailTitle.style.opacity = opacity;
+        });
+    }
 
 
 
